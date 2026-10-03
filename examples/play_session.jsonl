@@ -1,6 +1,0 @@
-{"command":"state"}
-{"command":"event","data":{"event_id":"faction_refusal_1","event_type":"faction_refusal_pattern","severity":0.750,"tags":["authority_challenge","faction_fragmentation"],"valence":-1.000,"surprise":0.800,"relationship_deltas":{"Frei":{"trust":-0.150,"operational_reliability":-0.120}}}}
-{"command":"decide","scene_tags":["authority_challenge"],"actions":[{"key":"repair","value_impacts":{"unity":0.750},"upside":0.550,"downside":0.200,"conflict_strategy":"negotiate","target_actor":"Frei","relationship_posture":"repair"},{"key":"boundary","value_impacts":{"political_authority":0.850},"upside":0.720,"downside":0.480,"control_domains":["direction"],"restores_control":0.720,"conflict_strategy":"institutionalize","target_actor":"Frei","relationship_posture":"boundary"}]}
-{"command":"outcome","data":{"action":"boundary","success":0.450,"tags":["authority_challenge"],"target_actor":"Frei","relationship_delta":{"trust":-0.040},"control_restoration":0.100,"identity_alignment":0.080}}
-{"command":"state"}
-{"command":"quit"}
