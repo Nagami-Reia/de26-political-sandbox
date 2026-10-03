@@ -1,0 +1,177 @@
+{
+  "stream_id": "union_observed_updates_2026_08_01_to_2026_09_18_v1",
+  "origin_environment_id": "union_federal_state_network_2026_07_31_v1",
+  "observed_through": "2026-09-18T23:59:59+02:00",
+  "epistemic_rule": "Events are observations. Resource effects are directional inferences, not measured support percentages and not personality claims.",
+  "events": [
+    {
+      "event_id": "E001",
+      "date": "2026-08-05",
+      "kind": "poll_observation",
+      "summary": "ARD DeutschlandTrend finds 14% satisfied with Merz, 21% Union vote intention and 13% government satisfaction; only 12% expect the reshuffle to improve government work.",
+      "actors": ["Friedrich_Merz", "CDU_CSU", "Federal_Coalition"],
+      "observed_metrics": [
+        {"subject": "Friedrich_Merz", "measure": "public_job_satisfaction", "scope": "DE", "value": 14, "unit": "percent", "source_id": "S01"},
+        {"subject": "CDU_CSU", "measure": "vote_intention", "scope": "DE", "value": 21, "unit": "percent", "source_id": "S01"},
+        {"subject": "Federal_Coalition", "measure": "government_satisfaction", "scope": "DE", "value": 13, "unit": "percent", "source_id": "S01"}
+      ],
+      "resource_effects": {"Friedrich_Merz.public_acceptance": "low_stable", "Friedrich_Merz.reshuffle_credit": "no_befreiungsschlag"},
+      "unknowns": ["No survey directly measures CDU elite support for Merz"]
+    },
+    {
+      "event_id": "E002",
+      "date": "2026-08-25",
+      "kind": "party_signal",
+      "summary": "SWR reports open and background criticism of Merz inside Baden-Wuerttemberg CDU, including criticism of the reshuffle and policy credibility.",
+      "actors": ["Friedrich_Merz", "Manuel_Hagel", "Thorsten_Frei", "Nina_Warken"],
+      "observed_metrics": [],
+      "resource_effects": {"Friedrich_Merz.intraparty_conversion_efficiency": "down", "BW_CDU.autonomous_voice": "up"},
+      "unknowns": ["The report does not quantify member support", "No evidence that Hagel, Frei and Warken formed a coordinated anti-Merz bloc"],
+      "source_ids": ["S02"]
+    },
+    {
+      "event_id": "E003",
+      "date": "2026-08-26",
+      "kind": "government_action",
+      "summary": "The Neuhardenberg cabinet retreat closes with a reform and confidence message, but without an immediate measurable public rebound.",
+      "actors": ["Friedrich_Merz", "Nina_Warken", "Alexander_Dobrindt", "Federal_Coalition"],
+      "observed_metrics": [],
+      "resource_effects": {"Federal_Chancellery.coordination_attempt": "up", "Friedrich_Merz.delivery_burden": "up"},
+      "unknowns": ["Causal effect on later polling cannot be isolated"],
+      "source_ids": ["S03"]
+    },
+    {
+      "event_id": "E004",
+      "date": "2026-09-02",
+      "kind": "campaign_signal",
+      "summary": "Wuest campaigns in Saxony-Anhalt and receives a more favorable local presentation than Merz; BerlinTrend separately records CDU Berlin at 21% and Evers at 13% in a direct-mayor question.",
+      "actors": ["Hendrik_Wuest", "Friedrich_Merz", "Sven_Schulze", "Stefan_Evers"],
+      "observed_metrics": [
+        {"subject": "CDU_Berlin", "measure": "vote_intention", "scope": "BE", "value": 21, "unit": "percent", "source_id": "S04"},
+        {"subject": "Stefan_Evers", "measure": "direct_mayor_preference", "scope": "BE", "value": 13, "unit": "percent", "source_id": "S04"}
+      ],
+      "resource_effects": {"Hendrik_Wuest.cross_regional_visibility": "up", "Hendrik_Wuest.declared_challenge": "none", "Stefan_Evers.electoral_viability": "competitive_but_low_personal_penetration"},
+      "unknowns": ["Media reception is not a measurement of CDU elite support for Wuest"],
+      "source_ids": ["S05"]
+    },
+    {
+      "event_id": "E005",
+      "date": "2026-09-03",
+      "kind": "poll_and_appointment",
+      "summary": "September DeutschlandTrend records Merz at 13%, Union at 21%, Dobrindt at 30% and the coalition at 15%; Merz appoints Ronald Rauhe as State Minister for Sport and Volunteering.",
+      "actors": ["Friedrich_Merz", "Alexander_Dobrindt", "Ronald_Rauhe", "CDU_CSU", "Federal_Coalition"],
+      "observed_metrics": [
+        {"subject": "Friedrich_Merz", "measure": "public_job_satisfaction", "scope": "DE", "value": 13, "unit": "percent", "source_id": "S06"},
+        {"subject": "Alexander_Dobrindt", "measure": "public_job_satisfaction", "scope": "DE", "value": 30, "unit": "percent", "source_id": "S06"},
+        {"subject": "CDU_CSU", "measure": "vote_intention", "scope": "DE", "value": 21, "unit": "percent", "source_id": "S06"},
+        {"subject": "Federal_Coalition", "measure": "government_satisfaction", "scope": "DE", "value": 15, "unit": "percent", "source_id": "S06"}
+      ],
+      "resource_effects": {"Friedrich_Merz.public_acceptance": "down_one_point", "Alexander_Dobrindt.public_profile": "up_two_points", "Federal_Chancellery.personnel_completeness": "up"},
+      "unknowns": ["Dobrindt and Merz ratings are not measures of candidacy support", "Rauhe's party-political brokerage capacity is untested"],
+      "source_ids": ["S07"]
+    },
+    {
+      "event_id": "E006",
+      "date": "2026-09-06",
+      "kind": "election_result",
+      "summary": "Saxony-Anhalt CDU falls from 37.1% in 2021 to 17.2%; AfD wins 43.8%. The result removes the CDU's governing mandate and creates a national leadership shock.",
+      "actors": ["Sven_Schulze", "Friedrich_Merz", "Franziska_Hoppermann", "CDU_Saxony_Anhalt"],
+      "observed_metrics": [
+        {"subject": "CDU_Saxony_Anhalt", "measure": "election_vote_share", "scope": "ST", "value": 17.2, "unit": "percent", "source_id": "S08"},
+        {"subject": "AfD_Saxony_Anhalt", "measure": "election_vote_share", "scope": "ST", "value": 43.8, "unit": "percent", "source_id": "S08"}
+      ],
+      "resource_effects": {"Sven_Schulze.electoral_legitimacy": "sharp_down", "Sven_Schulze.formal_executive": "caretaker_until_successor", "Friedrich_Merz.party_leadership_pressure": "sharp_up", "Franziska_Hoppermann.crisis_load": "sharp_up"},
+      "unknowns": ["The result does not identify a single causal contribution from federal politics, candidate effects or state conditions"]
+    },
+    {
+      "event_id": "E007",
+      "date": "2026-09-07",
+      "kind": "leadership_response_and_organization",
+      "summary": "Merz calls the result the CDU's gravest defeat in decades and rejects giving up. The Union faction elects Catarina dos Santos-Wintz first parliamentary manager with 90.9%.",
+      "actors": ["Friedrich_Merz", "Thorsten_Frei", "Catarina_dos_Santos_Wintz", "CDU_CSU_Faction"],
+      "observed_metrics": [
+        {"subject": "Catarina_dos_Santos_Wintz", "measure": "faction_ballot_support", "scope": "CDU_CSU_Faction", "value": 90.9, "unit": "percent", "source_id": "S09"}
+      ],
+      "resource_effects": {"Thorsten_Frei.faction_execution_capacity": "up", "CDU_CSU_Faction.manager_vacancy": "closed", "Friedrich_Merz.exit_signal": "rejected"},
+      "unknowns": ["A manager ballot is not a confidence ballot on Merz or Frei"],
+      "source_ids": ["S10"]
+    },
+    {
+      "event_id": "E008",
+      "date": "2026-09-08",
+      "kind": "party_and_state_reorganization",
+      "summary": "Mathias Middelberg becomes CDU federal treasurer. In Saxony-Anhalt, Schulze is elected state faction chair and the state relinquishes the incoming MPK chair because government formation is unresolved; a Mecklenburg-Vorpommern CDU deputy chair publicly calls for Merz to resign.",
+      "actors": ["Mathias_Middelberg", "Franziska_Hoppermann", "Sven_Schulze", "Friedrich_Merz", "Daniel_Peters", "Gordon_Schnieder"],
+      "observed_metrics": [],
+      "resource_effects": {"Franziska_Hoppermann.party_staffing_completeness": "up", "Sven_Schulze.parliamentary_role": "up", "Sven_Schulze.federal_state_interface": "down", "Friedrich_Merz.open_internal_dissent": "up", "Gordon_Schnieder.MPK_continuity_value": "up"},
+      "unknowns": ["The MV resignation call was not an official position of the state executive"],
+      "source_ids": ["S11", "S12"]
+    },
+    {
+      "event_id": "E009",
+      "date": "2026-09-09",
+      "kind": "faction_signal",
+      "summary": "Frei publicly describes the Union faction as stable, closed and determined, while acknowledging the election shock and emphasizing delivery over promises.",
+      "actors": ["Thorsten_Frei", "Friedrich_Merz", "CDU_CSU_Faction"],
+      "observed_metrics": [],
+      "resource_effects": {"Thorsten_Frei.public_stabilizer_role": "up", "CDU_CSU_Faction.observed_split": "not_detected_in_public_statement"},
+      "unknowns": ["Public unity claims do not reveal private dissent or future votes"],
+      "source_ids": ["S13"]
+    },
+    {
+      "event_id": "E010",
+      "date": "2026-09-10",
+      "kind": "state_poll_observation",
+      "summary": "BerlinTrend places CDU at 20% and Evers at 22% on suitability as governing mayor; MV Trend places CDU at 7%, close to the threshold and a historic risk.",
+      "actors": ["Stefan_Evers", "Daniel_Peters", "Philipp_Amthor", "Friedrich_Merz"],
+      "observed_metrics": [
+        {"subject": "CDU_Berlin", "measure": "vote_intention", "scope": "BE", "value": 20, "unit": "percent", "source_id": "S14"},
+        {"subject": "Stefan_Evers", "measure": "good_governing_mayor", "scope": "BE", "value": 22, "unit": "percent", "source_id": "S14"},
+        {"subject": "CDU_Mecklenburg_Western_Pomerania", "measure": "vote_intention", "scope": "MV", "value": 7, "unit": "percent", "source_id": "S15"}
+      ],
+      "resource_effects": {"Stefan_Evers.electoral_viability": "competitive", "Daniel_Peters.electoral_exposure": "extreme_near_threshold", "Philipp_Amthor.home_state_reputational_exposure": "sharp_up"},
+      "unknowns": ["State polls cannot be used as national support measures"]
+    },
+    {
+      "event_id": "E011",
+      "date": "2026-09-13",
+      "kind": "union_signal",
+      "summary": "Soeder says Merz remains the right Chancellor, rules out a CSU-led removal and demands faster reforms.",
+      "actors": ["Markus_Soeder", "Friedrich_Merz", "CSU_Apparatus"],
+      "observed_metrics": [],
+      "resource_effects": {"Markus_Soeder.immediate_challenge_path": "closed_by_public_commitment", "Markus_Soeder.future_option_value": "preserved", "Friedrich_Merz.CSU_support": "up_short_term"},
+      "unknowns": ["The statement does not settle post-legislature succession preferences"],
+      "source_ids": ["S16"]
+    },
+    {
+      "event_id": "E012",
+      "date": "2026-09-16",
+      "kind": "coordinated_elite_signal",
+      "summary": "All eight CDU Minister-Presidents issue a joint statement against personnel debate and for stability, acting as a newly observed coordinated bloc while supporting Merz in the immediate crisis.",
+      "actors": ["Daniel_Guenther", "Boris_Rhein", "Sven_Schulze", "Kai_Wegner", "Michael_Kretschmer", "Gordon_Schnieder", "Mario_Voigt", "Hendrik_Wuest", "Friedrich_Merz"],
+      "observed_metrics": [],
+      "resource_effects": {"CDU_state_premier_bloc.coordination": "up_from_unknown_to_observed", "Friedrich_Merz.elite_support_signal": "up_short_term", "CDU_state_premier_bloc.collective_bargaining_capacity": "up", "Hendrik_Wuest.active_challenge": "not_observed"},
+      "unknowns": ["Public backing does not measure private confidence or duration of support"],
+      "source_ids": ["S17"]
+    }
+  ],
+  "sources": {
+    "S01": {"title": "ARD DeutschlandTrend August 2026", "publisher": "Infratest dimap", "url": "https://www.infratest-dimap.de/umfragen-analysen/bundesweit/ard-deutschlandtrend/2026/august/"},
+    "S02": {"title": "Teile der BW-CDU sind unzufrieden mit dem Kanzler", "publisher": "SWR/Tagesschau", "url": "https://www.tagesschau.de/inland/regional/badenwuerttemberg/swr-wenn-merz-a-sagt-passiert-b-oder-c-teile-der-bw-cdu-sind-unzufrieden-mit-kanzler-merz-100.html"},
+    "S03": {"title": "Merz fordert eine neue Zuversicht", "publisher": "Tagesschau", "url": "https://www.tagesschau.de/inland/innenpolitik/kabinettsklausur-abschluss-100.html"},
+    "S04": {"title": "BerlinTrend 2 September", "publisher": "rbb24", "url": "https://www.rbb24.de/politik/berlin-wahl-2026/beitraege/berlin-trend-abgeordnetenhaus-wahl-september.html"},
+    "S05": {"title": "Wuest im Sachsen-Anhalt-Wahlkampf", "publisher": "WDR", "url": "https://www1.wdr.de/politik/politik-in-nrw/wuest-in-sachsen-anhalt-100.amp"},
+    "S06": {"title": "ARD DeutschlandTrend September 2026", "publisher": "Infratest dimap", "url": "https://www.infratest-dimap.de/umfragen-analysen/bundesweit/ard-deutschlandtrend/2026/september/"},
+    "S07": {"title": "Ronald Rauhe vorgestellt", "publisher": "Bundesregierung", "url": "https://www.bundesregierung.de/breg-de/aktuelles/vorstellung-staatsminister-sport-2451484"},
+    "S08": {"title": "Landtagswahl Sachsen-Anhalt 2026 Landesergebnis", "publisher": "Landeswahlleitung Sachsen-Anhalt", "url": "https://wahlergebnisse.sachsen-anhalt.de/wahlen/lt26/erg_land.html"},
+    "S09": {"title": "Dos Santos-Wintz zur Ersten Parlamentarischen Geschaeftsfuehrerin gewaehlt", "publisher": "CDU/CSU-Fraktion", "url": "https://www.cducsu.de/presse/catarina-dos-santos-wintz-zur-ersten-parlamentarischen-geschaeftsfuehrerin-gewaehlt"},
+    "S10": {"title": "Merz nach der Sachsen-Anhalt-Wahl", "publisher": "Tagesschau", "url": "https://www.tagesschau.de/inland/merz-wahl-sachsen-anhalt-104.html"},
+    "S11": {"title": "Middelberg neuer CDU-Bundesschatzmeister", "publisher": "NDR", "url": "https://www.ndr.de/nachrichten/niedersachsen/osnabrueck_emsland/osnabruecker-mathias-middelberg-ist-neuer-bundesschatzmeister-der-cdu%2Caktuellosnabrueck-2704.html"},
+    "S12": {"title": "Liveblog nach Sachsen-Anhalt-Wahl", "publisher": "Tagesschau", "url": "https://www.tagesschau.de/inland/innenpolitik/liveblog-nach-sachsen-anhalt-wahl-100.html"},
+    "S13": {"title": "Frei: weniger reden, mehr tun", "publisher": "ZDFheute", "url": "https://www.zdfheute.de/politik/deutschland/thorsten-frei-generaldebatte-union-stimmung-100.html"},
+    "S14": {"title": "BerlinTrend 10 September", "publisher": "rbb24", "url": "https://www.rbb24.de/politik/berlin-wahl-2026/beitraege/berlintrend-september-umfrage-wahl-abgeordnetenhaus.html"},
+    "S15": {"title": "MV-Trend 10 September", "publisher": "NDR", "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/landtagswahl/mv-trend-afd-vergroessert-abstand-auf-die-spd-die-cdu-verliert-weiter%2Cdeutschlandtrendmv-100.html"},
+    "S16": {"title": "Soeder weist Spekulationen ueber Merz-Abloesung zurueck", "publisher": "ZDFheute", "url": "https://www.zdfheute.de/politik/deutschland/soeder-merz-cdu-kanzler-wechsel-100.html"},
+    "S17": {"title": "CDU-Ministerpraesidenten stellen sich hinter Merz", "publisher": "Tagesschau", "url": "https://www.tagesschau.de/inland/innenpolitik/cdu-ministerpraesidenten-merz-100.html"}
+  }
+}

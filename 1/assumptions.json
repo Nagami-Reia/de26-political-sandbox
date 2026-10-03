@@ -1,0 +1,79 @@
+{
+  "purpose": "Retrospective calibration of a process model, not prediction and not actor evaluation.",
+  "normalization": "All resources are 0..1 operational encodings of ordinal relations in the source record. They are not scores of merit, competence, or electability.",
+  "initial_resources": {
+    "Merz": {
+      "formal_office_default": 0.96,
+      "landesverband_hausmacht": 0.61,
+      "fraktion": 0.84,
+      "party_apparatus": 0.80,
+      "public_visibility": 0.63,
+      "union_acceptability": 0.74,
+      "future_option_value": 0.57,
+      "basis": "CDU chair, CDU/CSU parliamentary leader, May 2024 re-election, organizational default; no automatic legal nomination right."
+    },
+    "Wuest": {
+      "formal_office_default": 0.34,
+      "landesverband_hausmacht": 0.91,
+      "fraktion": 0.38,
+      "party_apparatus": 0.48,
+      "public_visibility": 0.70,
+      "union_acceptability": 0.78,
+      "future_option_value": 0.94,
+      "basis": "NRW minister-president and chair of largest CDU Landesverband; plausible alternative but no federal party/fraktion office; younger future option."
+    },
+    "Soeder": {
+      "formal_office_default": 0.56,
+      "landesverband_hausmacht": 0.88,
+      "fraktion": 0.46,
+      "party_apparatus": 0.94,
+      "public_visibility": 0.91,
+      "union_acceptability": 0.62,
+      "future_option_value": 0.80,
+      "basis": "CSU chair and Bavarian minister-president with strong CSU apparatus and visibility; candidacy path institutionally depends on a substantial call from the larger CDU."
+    }
+  },
+  "organizational_nodes": {
+    "NRW_CDU": "Initially follows Wuest as Landeschef; can be reallocated by his endogenous decision.",
+    "Bundestagsfraktion": "Baseline aligned with its chair Merz; alignment and strength are explicit sensitivity levers.",
+    "CSU_apparatus": "Initially aligned with CSU chair Soeder; joint closure does not erase separate CSU identity.",
+    "Frei": "Thin rule: organization and personal+institutional loyalty stabilize a legible fraktion signal.",
+    "Linnemann": "Thin rule: implementation/Wirksamkeit converts sufficiently clear leadership into party organization.",
+    "Rhein": "Thin role rule only; no full personality model claimed.",
+    "Hagel": "Thin role rule including the publicly stated first-access norm; no full personality model claimed.",
+    "Guenther": "Mehrheiten/consensus/operative responsibility; reacts after viable closure rather than creating the candidate ex nihilo."
+  },
+  "personality_rules": {
+    "Wuest": "Ambition × Kontrolle × Akzeptanz × Timing is implemented as a weighted geometric mean so one weak conjunct can block a public irreversible challenge.",
+    "Merz": "Agency/Gestaltung supplies the pull toward candidacy; risk capacity rises conditionally with backing and default resources; default reduces the value of premature public declaration.",
+    "Soeder": "No rich psychological rule. Only source-supported strategic constraints: CSU apparatus, visibility, conditional availability, need for a CDU call, and declared preference for an agreed solution/no 2021 repeat.",
+    "Frei": "Gestaltung through Organisation plus personal and institutional loyalty.",
+    "Linnemann": "Wirksamkeit/implementation: organize once a workable direction is sufficiently clear.",
+    "Guenther": "Mehrheiten/consensus/operative responsibility: endorse a viable joint closure and reduce organizational disorder."
+  },
+  "unknown_black_boxes": [
+    "The exact content and sequencing of Merz-Wuest private conversations.",
+    "Any succession promise, office promise, or quid pro quo; none is assumed.",
+    "The exact Merz-Soeder bilateral bargain and emotional state of either actor.",
+    "Latent preferences of individual CDU delegates and MPs not publicly expressed.",
+    "Counterfactual media shocks, polling changes, leaks, or third-party interventions.",
+    "Whether Wuest's public timing was coordinated in detail; content coordination and timing control remain separate questions."
+  ],
+  "randomness": {
+    "allowed": [
+      "bounded perception error about current resource states",
+      "bounded private-bargain contingency"
+    ],
+    "not_allowed": [
+      "random personality",
+      "random ambition",
+      "outcome-conditioned rule changes"
+    ],
+    "interpretation": "Monte Carlo shares are model-path frequencies under perturbation, never real-world probabilities."
+  },
+  "anti_leakage": {
+    "observed_outcome_location": "OBSERVED_COMPARATOR in kfrage_sim.py",
+    "decision_access": "No decision function reads OBSERVED_COMPARATOR.",
+    "use": "Post-run calibration comparison only."
+  }
+}

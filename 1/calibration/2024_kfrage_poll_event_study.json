@@ -1,0 +1,33 @@
+{
+  "calibration_id": "2024_kfrage_poll_event_window_v1",
+  "target_event": {
+    "start": "2024-09-16",
+    "end": "2024-09-17",
+    "bundle": [
+      "Wuest withdraws and NRW-CDU supports Merz",
+      "Merz-Soeder closure",
+      "subsequent organisational synchronisation"
+    ],
+    "identification_limit": "No public poll fieldwork isolates 16 September from 17 September; the two decisions are one observable event bundle."
+  },
+  "party_vote_event_windows": [
+    {"pollster": "INSA online", "pre": 33.0, "post": 32.0, "delta_pp": -1.0, "pre_fieldwork": "2024-09-13/16", "post_fieldwork": "2024-09-20/23", "window_quality": "short_but_pre_ends_on_event_day", "source": "https://www.wahlrecht.de/umfragen/insa/2025.htm"},
+    {"pollster": "INSA TOM", "pre": 33.0, "post": 32.0, "delta_pp": -1.0, "pre_fieldwork": "2024-09-09/13", "post_fieldwork": "2024-09-16/19", "window_quality": "short_but_post_overlaps_event", "source": "https://www.wahlrecht.de/umfragen/insa/2025.htm"},
+    {"pollster": "Forsa", "pre": 31.0, "post": 32.0, "delta_pp": 1.0, "pre_fieldwork": "2024-09-10/16", "post_fieldwork": "2024-09-17/23", "window_quality": "cleanest_weekly_split", "source": "https://www.wahlrecht.de/umfragen/forsa.htm"},
+    {"pollster": "Forschungsgruppe Wahlen", "pre": 33.0, "post": 31.0, "delta_pp": -2.0, "pre_fieldwork": "2024-09-03/05", "post_fieldwork": "2024-09-24/26", "window_quality": "long_and_confounded_by_Brandenburg", "source": "https://presseportal.zdf.de/pressemitteilung/zdf-politbarometer-september-ii-2024"},
+    {"pollster": "Infratest dimap", "pre": 33.0, "post": 31.0, "delta_pp": -2.0, "pre_fieldwork": "2024-09-02/04", "post_fieldwork": "2024-10-07/09", "window_quality": "long_and_confounded", "source": "https://presse.wdr.de/plounge/tv/das_erste/2024/10/20241010_deutschlandtrend_politische_stimmung.html"},
+    {"pollster": "YouGov", "pre": 32.0, "post": 32.0, "delta_pp": 0.0, "pre_fieldwork": "2024-09-06/10", "post_fieldwork": "2024-10-04/08", "window_quality": "long_and_confounded", "source": "https://www.wahlrecht.de/umfragen/yougov.htm"},
+    {"pollster": "Allensbach", "pre": 35.5, "post": 36.0, "delta_pp": 0.5, "pre_fieldwork": "2024-08-29/09-11", "post_fieldwork": "2024-09-28/10-11", "window_quality": "long_and_confounded", "source": "https://www.wahlrecht.de/umfragen/allensbach.htm"}
+  ],
+  "candidate_metrics": [
+    {"pollster": "Forsa", "measure": "direct_chancellor_preference_Merz", "pre": 26.0, "post": 28.0, "delta_pp": 2.0, "pre_fieldwork": "2024-09-10/16", "post_fieldwork": "2024-09-17/23", "source": "https://www.presseportal.de/pm/154530/5871957"},
+    {"pollster": "Forschungsgruppe Wahlen", "measure": "Merz_image_scale_minus5_plus5", "pre": -0.1, "post": -0.5, "delta_points": -0.4, "note": "Not percentage points; demonstrates that nomination viability and general image can diverge.", "source": "https://presseportal.zdf.de/pressemitteilung/zdf-politbarometer-september-ii-2024"},
+    {"pollster": "Infratest dimap", "measure": "Merz_job_satisfaction", "pre": 31.0, "post": 27.0, "delta_pp": -4.0, "note": "Long and confounded window; not attributed to nomination alone.", "source": "https://presse.wdr.de/plounge/tv/das_erste/2024/10/20241010_deutschlandtrend_politische_stimmung.html"}
+  ],
+  "derived_rules": {
+    "federal_party_vote_after_orderly_closure": {"central_pp": 0.0, "plausible_interval_pp": [-1.0, 1.0], "interpretation": "No robust national vote-intention bounce; cross-pollster movements are smaller than ordinary sampling noise."},
+    "candidate_specific_viability_after_nomination": {"central_pp": 2.0, "plausible_interval_pp": [1.0, 3.0], "interpretation": "Short-term binary candidate-choice measures can react even when party vote intention does not."},
+    "general_personal_image_after_nomination": {"central_pp": 0.0, "plausible_interval_pp": [-4.0, 1.0], "interpretation": "Greater salience can polarise; do not mechanically transfer candidate-choice gains to satisfaction or image."},
+    "state_result_to_federal_transfer_multiplier": {"central": 0.25, "plausible_interval": [0.1, 0.4], "interpretation": "Model assumption, not identified by the 2024 K-Frage event study."}
+  }
+}

@@ -1,0 +1,6 @@
+{"command":"event","data":{"event_id":"example_pressure","event_type":"leadership_pressure","severity":0.55,"tags":["authority_challenge"],"valence":-1.0,"surprise":0.3}}
+{"command":"state"}
+{"command":"decide","node_id":"session_node_01","resources":{"formal_power":0.9,"organization_base":0.76},"goals":{"retain_strategic_control":0.9},"scene_tags":["authority_challenge"],"actions":[{"key":"coordinate","goal_impacts":{"retain_strategic_control":0.72},"value_impacts":{"unity":0.8},"upside":0.6,"downside":0.24,"uncertainty":0.3,"objective_feasibility":0.88,"conflict_strategy":"negotiate"},{"key":"impose_line","goal_impacts":{"retain_strategic_control":0.9},"value_impacts":{"political_authority":0.88},"upside":0.78,"downside":0.58,"uncertainty":0.48,"objective_feasibility":0.72,"conflict_strategy":"institutionalize"}]}
+{"command":"advance_time","days":7,"workload":0.2}
+{"command":"state"}
+{"command":"quit"}

@@ -1,0 +1,414 @@
+{
+  "schema_version": "persona-cards-2026.1",
+  "as_of": "2026-09-18",
+  "scale_note": "All 0-1 numbers are simulation priors, not psychometric measurements. Confidence measures evidence support, not certainty about the person.",
+  "evidence_layers": ["observed_fact", "repeated_behavior", "bounded_inference", "unknown_black_box"],
+  "actors": {
+    "Merz": {
+      "name": "Friedrich Merz",
+      "current_roles": ["Federal Chancellor", "CDU federal chair", "member of the coalition leadership"],
+      "observed_positions": {
+        "economy_state": "Structural reform, work incentives, competitiveness and faster state decisions; prepared to incur short-term political cost for a claimed macro correction.",
+        "migration_afd": "Harder migration control combined with a repeatedly stated refusal of CDU cooperation with AfD.",
+        "foreign_security": "Strong European capacity, Ukraine support, NATO and a more strategically autonomous Europe.",
+        "coalition": "Treats the SPD coalition as an instrument for reform, not as an identity project."
+      },
+      "decision_logic": {
+        "core": "Macro-level necessity and personal agency outrank short-term popularity.",
+        "sequence": "Forms a strong internal judgment, checks whether formal backing is sufficient, then acts and expects the organisation to follow.",
+        "risk": "Conditionally high: accepts large reversals or personnel moves when he believes a strategic correction is required.",
+        "information_style": "Strong on analytical and formal information; recent personnel episode suggests systematic underweighting of relational and implementation feedback.",
+        "failure_response": "Tends toward renewed assertion, centralisation or personnel correction before broad relational repair.",
+        "public_private_gap": "Can deliberate privately for a long time, but final decisions are highly self-owned; spontaneous public language creates avoidable secondary costs."
+      },
+      "resources": {
+        "formal_office": {"value": 0.98, "confidence": 0.99},
+        "party_apparatus": {"value": 0.74, "confidence": 0.80},
+        "parliamentary_control": {"value": 0.66, "confidence": 0.78, "note": "Mediated through Frei and weakened party goodwill."},
+        "territorial_hausmacht": {"value": 0.38, "confidence": 0.75},
+        "public_visibility": {"value": 0.98, "confidence": 0.99},
+        "cross_party_acceptability": {"value": 0.45, "confidence": 0.70},
+        "international_network": {"value": 0.90, "confidence": 0.85},
+        "future_option_value": {"value": 0.43, "confidence": 0.68}
+      },
+      "personality_priors": {
+        "agency_drive": {"value": 0.95, "confidence": 0.88},
+        "structural_reform_drive": {"value": 0.91, "confidence": 0.84},
+        "risk_tolerance": {"value": 0.76, "confidence": 0.73},
+        "consultation_need": {"value": 0.36, "confidence": 0.72},
+        "control_need": {"value": 0.78, "confidence": 0.68},
+        "poll_sensitivity": {"value": 0.38, "confidence": 0.65},
+        "loyalist_preference": {"value": 0.82, "confidence": 0.77},
+        "timing_patience": {"value": 0.64, "confidence": 0.70}
+      },
+      "stress_triggers": ["loss of visible control", "implementation drift", "challenge to personal authority", "perceived national decline"],
+      "unknown_black_boxes": ["private second-term intention", "threshold for yielding party chair", "degree to which the July 2026 reshuffle changed his consultation process"],
+      "source_ids": ["M1", "M3", "M4", "M6", "M8", "M9", "M10"]
+    },
+    "Frei": {
+      "name": "Thorsten Frei",
+      "current_roles": ["Chair of the CDU/CSU Bundestag group"],
+      "observed_positions": {
+        "governance": "Reform-oriented, legally structured and focused on translating a government programme into parliamentary majorities.",
+        "migration_state": "Restrictive migration and stronger state capacity within a legal-institutional frame.",
+        "leadership": "Publicly protects the collective line even when reporting indicates he warned privately against a tactic."
+      },
+      "decision_logic": {
+        "core": "Gestaltung through organisation: a policy objective matters only if the parliamentary machine can enact and defend it.",
+        "sequence": "Count votes, identify dissent, privately warn, organise a legible line, then explain it publicly.",
+        "risk": "Low-to-medium on open factional conflict; higher on workload and taking responsibility for difficult implementation.",
+        "information_style": "Dense faction network, procedural detail and rapid media feedback.",
+        "failure_response": "Repair coordination and narrative rather than publicly separate from the leader.",
+        "public_private_gap": "Private objections may be real but are normally subordinated to institutional loyalty."
+      },
+      "resources": {
+        "formal_office": {"value": 0.86, "confidence": 0.98},
+        "party_apparatus": {"value": 0.69, "confidence": 0.76},
+        "parliamentary_control": {"value": 0.92, "confidence": 0.90},
+        "territorial_hausmacht": {"value": 0.45, "confidence": 0.70},
+        "public_visibility": {"value": 0.68, "confidence": 0.78},
+        "cross_party_acceptability": {"value": 0.65, "confidence": 0.65},
+        "personal_merz_link": {"value": 0.91, "confidence": 0.88},
+        "future_option_value": {"value": 0.69, "confidence": 0.67}
+      },
+      "personality_priors": {
+        "organisation_drive": {"value": 0.97, "confidence": 0.91},
+        "implementation_drive": {"value": 0.91, "confidence": 0.86},
+        "institutional_loyalty": {"value": 0.93, "confidence": 0.89},
+        "public_dissent_tolerance": {"value": 0.18, "confidence": 0.82},
+        "risk_tolerance": {"value": 0.39, "confidence": 0.65},
+        "personal_ambition": {"value": 0.66, "confidence": 0.56},
+        "visibility_preference": {"value": 0.65, "confidence": 0.70}
+      },
+      "stress_triggers": ["uncounted votes", "leader announcement without organisational preparation", "faction fragmentation", "unclear responsibility"],
+      "unknown_black_boxes": ["how autonomous he will become as faction chair", "whether loyalty survives a direct Merz-versus-faction conflict"],
+      "source_ids": ["F1", "F2", "F3", "F4", "F5", "F6"]
+    },
+    "Wuest": {
+      "name": "Hendrik Wüst",
+      "current_roles": ["Minister-President of North Rhine-Westphalia", "chair of CDU North Rhine-Westphalia"],
+      "observed_positions": {
+        "coalition": "Professional compromise across democratic parties; governs with the Greens while preserving a distinct CDU profile.",
+        "economy_state": "Industrial transformation, municipal capacity and an administratively functioning social state.",
+        "migration": "Reduction of irregular migration combined with integration capacity and social cohesion.",
+        "party": "The CDU should remain broadly acceptable in the political centre and avoid self-isolating culture-war politics."
+      },
+      "decision_logic": {
+        "core": "Ambition × control × acceptance × timing; a public irreversible move requires all four to clear threshold.",
+        "sequence": "Map actors and reception, build or verify a majority, reduce exposure, then stage the public step as orderly closure.",
+        "risk": "Controlled rather than low; capable of hard moves after the structure is prepared.",
+        "information_style": "High attention to atmosphere, image, coalition partners, local networks and implementation consequences.",
+        "failure_response": "Absorb lessons, change style and rebuild quietly; accepts adaptive correction when the strategic objective remains intact and avoids repeated public loss of control.",
+        "public_private_gap": "Polite/präsidial interface can coexist with cold vote counting and active network construction."
+      },
+      "resources": {
+        "formal_office": {"value": 0.88, "confidence": 0.99},
+        "party_apparatus": {"value": 0.92, "confidence": 0.91},
+        "parliamentary_control": {"value": 0.83, "confidence": 0.81},
+        "territorial_hausmacht": {"value": 0.98, "confidence": 0.96},
+        "public_visibility": {"value": 0.80, "confidence": 0.79},
+        "cross_party_acceptability": {"value": 0.88, "confidence": 0.82},
+        "federal_successor_option": {"value": 0.86, "confidence": 0.77},
+        "future_option_value": {"value": 0.85, "confidence": 0.75}
+      },
+      "personality_priors": {
+        "ambition": {"value": 0.84, "confidence": 0.77},
+        "control_need": {"value": 0.93, "confidence": 0.87},
+        "acceptance_need": {"value": 0.87, "confidence": 0.82},
+        "timing_patience": {"value": 0.91, "confidence": 0.85},
+        "public_risk_tolerance": {"value": 0.42, "confidence": 0.74},
+        "coalition_flexibility": {"value": 0.86, "confidence": 0.88},
+        "image_sensitivity": {"value": 0.88, "confidence": 0.82},
+        "adaptive_management": {"value": 0.88, "confidence": 0.84},
+        "fairness_legitimation": {"value": 0.83, "confidence": 0.79}
+      },
+      "stress_triggers": ["uncontrolled public escalation", "insufficient acceptance", "threat to NRW governability", "being forced to declare before the structure is ready"],
+      "unknown_black_boxes": ["exact threshold for moving against an incumbent chancellor", "whether April 2027 NRW election blocks or accelerates a federal move"],
+      "source_ids": ["W1", "W2", "W3", "W4", "W5", "W6", "W7", "W8"]
+    },
+    "Soeder": {
+      "name": "Markus Söder",
+      "current_roles": ["Minister-President of Bavaria", "CSU chair"],
+      "observed_positions": {
+        "state_party": "Bavarian and CSU relevance must remain visible in every federal settlement.",
+        "coalition": "Supports the Merz government while using CSU veto and agenda power; remains highly hostile to Green coalition options.",
+        "economy_social": "Mixes business and technology positioning with CSU signature distributive policies.",
+        "afd": "Frames CSU as a democratic bulwark and rejects becoming an AfD enabler."
+      },
+      "decision_logic": {
+        "core": "Maximise CSU/Bavaria relevance, personal visibility and option value; content and style can be rapidly reconfigured.",
+        "sequence": "Signal, test audience and elite response, escalate if a viable bridgehead appears, otherwise reframe and close while preserving influence.",
+        "risk": "High in reversible public signalling; much lower when contest continuation threatens the CSU machine or produces certain defeat.",
+        "information_style": "Polling, media resonance, party elite response and comparative viability.",
+        "failure_response": "Rapid narrative and image reset; concedes little causal responsibility and offers a new strategic frame.",
+        "public_private_gap": "Public maximalism is often a bargaining device; it should not be read as a fixed final preference."
+      },
+      "resources": {
+        "formal_office": {"value": 0.91, "confidence": 0.99},
+        "party_apparatus": {"value": 0.88, "confidence": 0.87, "note": "Still strong but no longer uncontested."},
+        "parliamentary_control": {"value": 0.78, "confidence": 0.78},
+        "territorial_hausmacht": {"value": 0.94, "confidence": 0.93},
+        "public_visibility": {"value": 0.99, "confidence": 0.99},
+        "cross_party_acceptability": {"value": 0.44, "confidence": 0.73},
+        "cdu_bridgehead": {"value": 0.30, "confidence": 0.60},
+        "future_option_value": {"value": 0.65, "confidence": 0.67}
+      },
+      "personality_priors": {
+        "ambition": {"value": 0.92, "confidence": 0.84},
+        "control_need": {"value": 0.92, "confidence": 0.84},
+        "visibility_drive": {"value": 0.99, "confidence": 0.94},
+        "tactical_flexibility": {"value": 0.94, "confidence": 0.91},
+        "reversible_risk_tolerance": {"value": 0.82, "confidence": 0.79},
+        "irreversible_risk_tolerance": {"value": 0.48, "confidence": 0.69},
+        "poll_sensitivity": {"value": 0.91, "confidence": 0.82},
+        "internal_pluralism_tolerance": {"value": 0.31, "confidence": 0.72}
+      },
+      "stress_triggers": ["loss of CSU monopoly on Bavarian representation", "internal elite challenge", "falling local offices", "exclusion from federal bargaining"],
+      "unknown_black_boxes": ["true 2028 retirement intention", "whether Manfred Weber or Ilse Aigner can convert criticism into a majority", "current private federal ambition"],
+      "source_ids": ["S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8"]
+    },
+    "Linnemann": {
+      "name": "Carsten Linnemann",
+      "current_roles": ["Federal Minister of Health", "CDU Bundestag member for Paderborn"],
+      "observed_positions": {
+        "economy_work": "Supply-side reform, work incentives, lower non-wage labour costs and a state that distinguishes support from permanent dependency.",
+        "implementation": "Measures politics by whether a rule changes behaviour and can be implemented quickly.",
+        "health_2026": "Now prioritises structural hospital, practice, emergency and long-term care finance reform; explicitly protects selected carers from blunt cuts.",
+        "party": "Clearer conservative economic profile without formal AfD cooperation."
+      },
+      "decision_logic": {
+        "core": "Wirksamkeit/implementation: prefer a legible reform with measurable behavioural effect over symbolic consensus.",
+        "sequence": "Name dysfunction, reduce it to an implementable rule, seek rapid execution and communicate in ordinary-language examples.",
+        "risk": "Medium-high on policy confrontation; lower when he lacks subject expertise, as shown by earlier reluctance to take an unsuitable ministry.",
+        "information_style": "Economic indicators, practitioner feedback, local conversations and concrete cases.",
+        "failure_response": "Reframe around implementation gaps and propose a sharper mechanism.",
+        "public_private_gap": "Relatively small in substantive preferences; ambition and office preference are less observable."
+      },
+      "resources": {
+        "formal_office": {"value": 0.82, "confidence": 0.98},
+        "party_apparatus": {"value": 0.62, "confidence": 0.75, "note": "Former general secretary; no longer controls the office."},
+        "parliamentary_control": {"value": 0.57, "confidence": 0.68},
+        "territorial_hausmacht": {"value": 0.66, "confidence": 0.77},
+        "public_visibility": {"value": 0.80, "confidence": 0.84},
+        "cross_party_acceptability": {"value": 0.44, "confidence": 0.65},
+        "policy_network": {"value": 0.79, "confidence": 0.74},
+        "future_option_value": {"value": 0.66, "confidence": 0.64}
+      },
+      "personality_priors": {
+        "implementation_drive": {"value": 0.96, "confidence": 0.91},
+        "economic_reform_drive": {"value": 0.94, "confidence": 0.90},
+        "directness": {"value": 0.84, "confidence": 0.82},
+        "risk_tolerance": {"value": 0.63, "confidence": 0.66},
+        "consensus_need": {"value": 0.43, "confidence": 0.61},
+        "personal_loyalty": {"value": 0.78, "confidence": 0.72},
+        "domain_restraint": {"value": 0.72, "confidence": 0.78},
+        "experimentalism": {"value": 0.87, "confidence": 0.82},
+        "office_independence": {"value": 0.74, "confidence": 0.68}
+      },
+      "stress_triggers": ["reform without implementation path", "bureaucratic delay", "rules that reward non-performance", "being assigned responsibility without usable levers"],
+      "unknown_black_boxes": ["speed of health-policy learning", "whether ministry failure weakens or radicalises his implementation logic", "post-ministry party ambition"],
+      "source_ids": ["L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8"]
+    },
+    "Guenther": {
+      "name": "Daniel Günther",
+      "current_roles": ["Minister-President of Schleswig-Holstein", "chair of CDU Schleswig-Holstein"],
+      "observed_positions": {
+        "coalition": "Broad democratic coalition capacity and durable cooperation with pragmatic Greens.",
+        "afd_democracy": "Clear exclusion of AfD, support for testing a ban procedure, stronger democratic and digital safeguards.",
+        "political_style": "Do not imitate or out-dramatise the far right; solve problems, explain complexity and preserve social cohesion.",
+        "economy_security": "Green energy as industrial advantage; security includes jobs, welfare capacity and physical safety."
+      },
+      "decision_logic": {
+        "core": "Majorities, consensus and operative responsibility; political identity is proven through a working democratic coalition.",
+        "sequence": "Define a broad public problem, search cross-party workable space, normalise compromise, then defend the agreed line firmly.",
+        "risk": "Low on theatrical escalation but medium-high when democratic norms or coalition functionality are at stake.",
+        "information_style": "State outcomes, coalition feedback, public acceptance and direct citizen contact.",
+        "failure_response": "Rebuild common ground and distinguish democratic actors from anti-system actors.",
+        "public_private_gap": "Relatively low; public pragmatism appears structurally consistent with coalition behaviour."
+      },
+      "resources": {
+        "formal_office": {"value": 0.88, "confidence": 0.99},
+        "party_apparatus": {"value": 0.88, "confidence": 0.91},
+        "parliamentary_control": {"value": 0.85, "confidence": 0.85},
+        "territorial_hausmacht": {"value": 0.76, "confidence": 0.86},
+        "public_visibility": {"value": 0.72, "confidence": 0.76},
+        "cross_party_acceptability": {"value": 0.93, "confidence": 0.87},
+        "federal_successor_option": {"value": 0.62, "confidence": 0.60},
+        "future_option_value": {"value": 0.70, "confidence": 0.66}
+      },
+      "personality_priors": {
+        "consensus_drive": {"value": 0.93, "confidence": 0.90},
+        "pragmatism": {"value": 0.91, "confidence": 0.88},
+        "institutionalism": {"value": 0.89, "confidence": 0.84},
+        "cross_party_openness": {"value": 0.91, "confidence": 0.90},
+        "dramatisation_drive": {"value": 0.18, "confidence": 0.81},
+        "norm_defence_risk_tolerance": {"value": 0.67, "confidence": 0.72},
+        "federal_ambition": {"value": 0.30, "confidence": 0.68}
+      },
+      "stress_triggers": ["democratic actors copying AfD language", "public coalition disorder", "threats to pluralist institutions", "Berlin-style permanent conflict"],
+      "unknown_black_boxes": ["actual willingness to seek the chancellorship", "how a weaker 2027 state result would alter consensus strategy"],
+      "source_ids": ["G1", "G2", "G3", "G4", "G5", "G6", "G7"]
+    },
+    "Wadephul": {
+      "name": "Johann Wadephul",
+      "current_roles": ["Federal Minister for Foreign Affairs"],
+      "observed_positions": {
+        "ukraine_russia": "Ukraine's sovereignty is central to European security; Russia must be confronted through allied capacity and diplomacy.",
+        "nato_europe": "Maintain the transatlantic alliance while Europe assumes materially more defence responsibility.",
+        "middle_east_law": "Strong Israeli security commitment combined with international-law and humanitarian constraints.",
+        "diplomacy": "Engagement with pleasant and unpleasant counterparts; diplomacy as balance and understanding."
+      },
+      "decision_logic": {
+        "core": "Expert, alliance-anchored diplomacy: preserve legal legitimacy and allied cohesion while increasing hard-power capacity.",
+        "sequence": "Consult allies and specialists, establish legal/strategic bounds, seek a common line, then communicate firmly.",
+        "risk": "Medium; willing to advance a security number or judgment, but generally avoids personalising foreign policy.",
+        "information_style": "Professional diplomatic, military, parliamentary and allied channels.",
+        "failure_response": "Clarify, rebalance and return to alliance/legal frame rather than escalate personal conflict.",
+        "public_private_gap": "Low personal theatre; occasional premature public specificity can exceed coordination with the Chancellor."
+      },
+      "resources": {
+        "formal_office": {"value": 0.91, "confidence": 0.99},
+        "party_apparatus": {"value": 0.52, "confidence": 0.67},
+        "parliamentary_control": {"value": 0.61, "confidence": 0.70},
+        "territorial_hausmacht": {"value": 0.43, "confidence": 0.65},
+        "public_visibility": {"value": 0.72, "confidence": 0.82},
+        "cross_party_acceptability": {"value": 0.72, "confidence": 0.69},
+        "foreign_policy_expertise": {"value": 0.95, "confidence": 0.94},
+        "agenda_autonomy": {"value": 0.48, "confidence": 0.74, "note": "Constrained by a highly active foreign-policy Chancellor."}
+      },
+      "personality_priors": {
+        "expertise_orientation": {"value": 0.95, "confidence": 0.92},
+        "alliance_orientation": {"value": 0.96, "confidence": 0.94},
+        "legalism": {"value": 0.88, "confidence": 0.85},
+        "team_orientation": {"value": 0.90, "confidence": 0.83},
+        "personal_visibility_drive": {"value": 0.38, "confidence": 0.69},
+        "risk_tolerance": {"value": 0.56, "confidence": 0.61},
+        "leader_loyalty": {"value": 0.84, "confidence": 0.78}
+      },
+      "stress_triggers": ["alliance fragmentation", "international-law ambiguity", "Chancellery-ministry contradiction", "strategic surprise from the US"],
+      "unknown_black_boxes": ["how far he will resist Merz in a direct legal-strategic conflict", "durability of his own diplomatic network independent of the Chancellor"],
+      "source_ids": ["J1", "J2", "J3", "J4", "J5", "J6", "J7", "J8"]
+    },
+    "Evers": {
+      "name": "Stefan Evers",
+      "current_roles": ["Berlin Senator for Finance and Culture", "CDU lead candidate for the 20 September 2026 Berlin election"],
+      "observed_positions": {
+        "state_finance": "Fiscal restraint, administrative functioning and numerical feasibility before ideological programme maximalism.",
+        "administration": "Use technology and organisational reform to maintain services with fewer personnel.",
+        "party_campaign": "Can run a clearly conservative campaign while remaining personally liberal-conservative and organisationally flexible.",
+        "security_integration": "Willing to use sharper cultural and security distinctions when he judges Berlin governance or pluralism at stake."
+      },
+      "decision_logic": {
+        "core": "Duty-bound strategic execution: solve the organisation's immediate bottleneck, even when it requires taking an unwanted front-line role.",
+        "sequence": "Understand the numbers and machinery, build an internally coherent campaign/administration, signal toughness, then accept feasible compromise.",
+        "risk": "Low on self-launching ambition; medium-high once assigned responsibility, including hard personnel decisions.",
+        "information_style": "Budgets, administrative detail, district-party networks and campaign testing.",
+        "failure_response": "Take over the orphaned task, narrow expectations and repair execution.",
+        "public_private_gap": "Low public ego, high backstage influence; ideological presentation is more flexible than organisational loyalty."
+      },
+      "resources": {
+        "formal_office": {"value": 0.79, "confidence": 0.98},
+        "party_apparatus": {"value": 0.80, "confidence": 0.83},
+        "parliamentary_control": {"value": 0.66, "confidence": 0.72},
+        "territorial_hausmacht": {"value": 0.68, "confidence": 0.72},
+        "public_visibility": {"value": 0.71, "confidence": 0.79},
+        "cross_party_acceptability": {"value": 0.63, "confidence": 0.61},
+        "campaign_machine": {"value": 0.91, "confidence": 0.89},
+        "future_option_value": {"value": 0.74, "confidence": 0.69}
+      },
+      "personality_priors": {
+        "organisation_drive": {"value": 0.93, "confidence": 0.89},
+        "duty_orientation": {"value": 0.95, "confidence": 0.89},
+        "fiscal_constraint_weight": {"value": 0.91, "confidence": 0.86},
+        "loyalty": {"value": 0.91, "confidence": 0.86},
+        "public_ambition": {"value": 0.34, "confidence": 0.67},
+        "framing_flexibility": {"value": 0.84, "confidence": 0.79},
+        "hard_personnel_capacity": {"value": 0.76, "confidence": 0.70},
+        "compromise_capacity": {"value": 0.78, "confidence": 0.76}
+      },
+      "stress_triggers": ["administrative dysfunction", "unfunded promises", "leader vacancy", "party fragmentation"],
+      "unknown_black_boxes": ["mass-electoral appeal outside a rescue campaign", "whether loyalty persists after acquiring an independent mandate"],
+      "source_ids": ["E1", "E2", "E3", "E4", "E5", "E6"]
+    },
+    "Rhein": {
+      "name": "Boris Rhein",
+      "current_roles": ["Minister-President of Hesse", "chair of CDU Hesse"],
+      "observed_positions": {
+        "economy": "Competitiveness, investment, labour-oriented migration and a functioning state.",
+        "coalition": "Comfortable changing from a Green to an SPD partner when electoral mandate and strategic fit change.",
+        "afd": "No cooperation; reduce AfD through governing performance and address migration/economic causes rather than constant symbolic debate.",
+        "security": "Strong internal and external security, but sceptical of legally premature symbolic measures such as an unprepared ban case."
+      },
+      "decision_logic": {
+        "core": "Electoral mandate plus governability: choose the coalition and message that maximise stable state leadership.",
+        "sequence": "Read the result and state interests, compare workable majorities, choose a clear governing partner, then project optimistic control.",
+        "risk": "Medium-low; accepts a major coalition change when backed by a strong result and organisational control.",
+        "information_style": "State economic data, coalition arithmetic, municipal signals and party organisation.",
+        "failure_response": "Return to delivery and positive state narrative rather than ideological escalation.",
+        "public_private_gap": "Polished and good-humoured public style can conceal firm coalition and personnel choices."
+      },
+      "resources": {
+        "formal_office": {"value": 0.88, "confidence": 0.99},
+        "party_apparatus": {"value": 0.89, "confidence": 0.89},
+        "parliamentary_control": {"value": 0.85, "confidence": 0.84},
+        "territorial_hausmacht": {"value": 0.83, "confidence": 0.87},
+        "public_visibility": {"value": 0.69, "confidence": 0.73},
+        "cross_party_acceptability": {"value": 0.81, "confidence": 0.78},
+        "federal_successor_option": {"value": 0.63, "confidence": 0.57},
+        "future_option_value": {"value": 0.70, "confidence": 0.62}
+      },
+      "personality_priors": {
+        "governability_weight": {"value": 0.91, "confidence": 0.86},
+        "coalition_flexibility": {"value": 0.85, "confidence": 0.84},
+        "economic_delivery_drive": {"value": 0.86, "confidence": 0.82},
+        "positive_message_bias": {"value": 0.82, "confidence": 0.77},
+        "risk_tolerance": {"value": 0.48, "confidence": 0.60},
+        "public_ambition": {"value": 0.55, "confidence": 0.46},
+        "institutionalism": {"value": 0.82, "confidence": 0.76}
+      },
+      "stress_triggers": ["loss of governable majority", "economic location shock", "pressure for symbolic AfD tactics", "coalition disorder"],
+      "unknown_black_boxes": ["real federal ambition", "response to a direct Wüst-Rhein succession contest", "durability of SPD coalition under austerity"],
+      "source_ids": ["R1", "R2", "R3", "R4", "R5", "R6"]
+    },
+    "Schulze": {
+      "name": "Sven Schulze",
+      "current_roles": ["Minister-President/caretaker of Saxony-Anhalt pending government formation", "outgoing chair of CDU Saxony-Anhalt until the special party congress"],
+      "observed_positions": {
+        "economy": "Investment, infrastructure, skilled labour and reliability rather than subsidy spectacle; strong regional industrial focus.",
+        "coalition_afd": "Government from the democratic centre and no CDU-AfD cooperation.",
+        "state_identity": "Defend the state's post-1990 progress against decline narratives and external stereotyping.",
+        "social_state": "Reciprocity: recipients of public support should contribute where feasible."
+      },
+      "decision_logic": {
+        "core": "Engineer-like delivery plus regional responsibility; prove that the state can produce concrete economic improvement.",
+        "sequence": "Define a practical target, use administrative and external networks, confront objections directly and emphasise measurable output.",
+        "risk": "Medium; more willing to enter direct conflict than to manage presentation, but electoral communication is comparatively unpolished.",
+        "information_style": "Economic projects, EU/Berlin contacts, regional administration and face-to-face business networks.",
+        "failure_response": "Publicly acknowledge the loss, accept opposition and release the party leadership for renewal.",
+        "public_private_gap": "No strong evidence of elaborate staging; directness can reduce message discipline."
+      },
+      "resources": {
+        "formal_office": {"value": 0.55, "confidence": 0.90, "note": "High title, sharply time-limited authority during formation."},
+        "party_apparatus": {"value": 0.31, "confidence": 0.88, "note": "Will not stand again for state chair."},
+        "parliamentary_control": {"value": 0.34, "confidence": 0.70},
+        "territorial_hausmacht": {"value": 0.38, "confidence": 0.78},
+        "public_visibility": {"value": 0.64, "confidence": 0.75},
+        "cross_party_acceptability": {"value": 0.55, "confidence": 0.60},
+        "economic_network": {"value": 0.77, "confidence": 0.76},
+        "future_option_value": {"value": 0.27, "confidence": 0.72}
+      },
+      "personality_priors": {
+        "implementation_drive": {"value": 0.84, "confidence": 0.75},
+        "economic_delivery_drive": {"value": 0.89, "confidence": 0.83},
+        "regional_loyalty": {"value": 0.91, "confidence": 0.84},
+        "direct_conflict_tolerance": {"value": 0.72, "confidence": 0.67},
+        "presentation_control": {"value": 0.43, "confidence": 0.66},
+        "accountability_response": {"value": 0.79, "confidence": 0.78},
+        "coalition_centre_weight": {"value": 0.78, "confidence": 0.77}
+      },
+      "stress_triggers": ["state decline narrative", "investor isolation", "challenge to democratic-centre coalition", "loss of delivery credibility"],
+      "unknown_black_boxes": ["future faction role", "whether he remains an opposition leader after the special congress", "personal responsibility assigned for the 17.2 percent result"],
+      "source_ids": ["H1", "H2", "H3", "H4", "H5", "H6", "H7", "H8"]
+    }
+  }
+}
