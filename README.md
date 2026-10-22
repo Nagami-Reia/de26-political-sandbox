@@ -1,4 +1,4 @@
-# 箱庭 · Hakoniwa
+# 箱庭 · Hakoniwa v.3.0.1-a
 
 **A Political Simulation Sandbox · Eine politische Simulationsumgebung**
 
