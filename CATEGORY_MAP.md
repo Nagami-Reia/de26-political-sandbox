@@ -10,6 +10,8 @@
 | `05_PLUGIN_ARCANA.zip` | Optional ARCANA plug-in |
 | `06_DEVELOPER_TESTS.zip` | Tests, labs, examples and legacy calibration adapters |
 | `07_DOCUMENTATION.zip` | Architecture, model and source documentation |
+| `08_PLUGIN_POLLING.zip` | Voter response, polling, electorate evidence and publication models |
+| `09_PLUGIN_MAJORITIES.zip` | Organizational majorities, discipline and member-level voting |
 
 All ZIPs are deterministic and contain `Hakoniwa/BUNDLE_MANIFEST.json`.
 Generated reports, scenario outputs, caches and bytecode are excluded.

@@ -1,0 +1,72 @@
+{
+  "project": "Hakoniwa",
+  "version": "v.3.1.0-a",
+  "release_date": "2026-10-26",
+  "repository": "https://github.com/Nagami-Reia/de26-political-sandbox",
+  "remote_readme_checked": false,
+  "readme_basis": "User-provided README text; only version line added",
+  "archives": [
+    {
+      "file": "00_FULL_PORTABLE_APP.zip",
+      "bytes": 2965474,
+      "sha256": "6f713d65a67ed62fbe4d6e94a9dfdcacc488873a598349ac916f435d89e7324d",
+      "source_files": 640
+    },
+    {
+      "file": "01_CORE_ENGINE.zip",
+      "bytes": 180270,
+      "sha256": "48a4f23cac70073028a08eabcc8738125b4efc7f00add00b0c1787f688bebdb9",
+      "source_files": 64
+    },
+    {
+      "file": "02_PERSONAS_AND_DATA.zip",
+      "bytes": 434995,
+      "sha256": "600f797beb423695667be1cafb7df0111c2bd4860dd10aca802bd64bd40ac33e",
+      "source_files": 286
+    },
+    {
+      "file": "03_INSTITUTIONS_AND_LAW.zip",
+      "bytes": 36316,
+      "sha256": "daf36ccfc40fed8c03f60fb2c1eeea4f1c7e2eaeacdd1c2d7df9a057131d8947",
+      "source_files": 34
+    },
+    {
+      "file": "04_SCENARIO_PACKS.zip",
+      "bytes": 152771,
+      "sha256": "44bd6ff8d73f05bbcc7a0f326dbcef3395526d57ec9555864aa692144d1792dd",
+      "source_files": 37
+    },
+    {
+      "file": "05_PLUGIN_ARCANA.zip",
+      "bytes": 32986,
+      "sha256": "ae15d8e767db14fdf3fe798b4e64e0e35b0c35751f9700ed3e5d18323c22b391",
+      "source_files": 25
+    },
+    {
+      "file": "06_DEVELOPER_TESTS.zip",
+      "bytes": 188789,
+      "sha256": "44b8f8f10d9344f8086b53c155e58b787f195c56266acdf0878d1b1384fd1fa3",
+      "source_files": 82
+    },
+    {
+      "file": "07_DOCUMENTATION.zip",
+      "bytes": 237025,
+      "sha256": "dbbd18d4a887e59a2d692549b2a3e2953e640aab66bec912b9e4d3df6917b006",
+      "source_files": 90
+    },
+    {
+      "file": "08_PLUGIN_POLLING.zip",
+      "bytes": 1853839,
+      "sha256": "542e9a0c708dccb1b01d7df446e3cea4ec9f98b4493299190a6abfb51b4c24c1",
+      "source_files": 89
+    },
+    {
+      "file": "09_PLUGIN_MAJORITIES.zip",
+      "bytes": 38166,
+      "sha256": "a24efa3ef09721c03496c4d69d5edc4fd28c543c2ac69ece9ccdcb68513ee066",
+      "source_files": 14
+    }
+  ],
+  "excluded": "Generated reports, caches, bytecode, synced sources and downloaded input archives",
+  "category_archives_are_partial": true
+}

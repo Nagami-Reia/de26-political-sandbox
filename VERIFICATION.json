@@ -1,0 +1,109 @@
+{
+  "version": "v.3.1.0-a",
+  "status": "PASS",
+  "archives": [
+    {
+      "archive": "00_FULL_PORTABLE_APP.zip",
+      "bytes": 2965474,
+      "files": 640,
+      "sha256": "6f713d65a67ed62fbe4d6e94a9dfdcacc488873a598349ac916f435d89e7324d",
+      "crc": "PASS",
+      "inner_sha256": "PASS"
+    },
+    {
+      "archive": "01_CORE_ENGINE.zip",
+      "bytes": 180270,
+      "files": 64,
+      "sha256": "48a4f23cac70073028a08eabcc8738125b4efc7f00add00b0c1787f688bebdb9",
+      "crc": "PASS",
+      "inner_sha256": "PASS"
+    },
+    {
+      "archive": "02_PERSONAS_AND_DATA.zip",
+      "bytes": 434995,
+      "files": 286,
+      "sha256": "600f797beb423695667be1cafb7df0111c2bd4860dd10aca802bd64bd40ac33e",
+      "crc": "PASS",
+      "inner_sha256": "PASS"
+    },
+    {
+      "archive": "03_INSTITUTIONS_AND_LAW.zip",
+      "bytes": 36316,
+      "files": 34,
+      "sha256": "daf36ccfc40fed8c03f60fb2c1eeea4f1c7e2eaeacdd1c2d7df9a057131d8947",
+      "crc": "PASS",
+      "inner_sha256": "PASS"
+    },
+    {
+      "archive": "04_SCENARIO_PACKS.zip",
+      "bytes": 152771,
+      "files": 37,
+      "sha256": "44bd6ff8d73f05bbcc7a0f326dbcef3395526d57ec9555864aa692144d1792dd",
+      "crc": "PASS",
+      "inner_sha256": "PASS"
+    },
+    {
+      "archive": "05_PLUGIN_ARCANA.zip",
+      "bytes": 32986,
+      "files": 25,
+      "sha256": "ae15d8e767db14fdf3fe798b4e64e0e35b0c35751f9700ed3e5d18323c22b391",
+      "crc": "PASS",
+      "inner_sha256": "PASS"
+    },
+    {
+      "archive": "06_DEVELOPER_TESTS.zip",
+      "bytes": 188789,
+      "files": 82,
+      "sha256": "44b8f8f10d9344f8086b53c155e58b787f195c56266acdf0878d1b1384fd1fa3",
+      "crc": "PASS",
+      "inner_sha256": "PASS"
+    },
+    {
+      "archive": "07_DOCUMENTATION.zip",
+      "bytes": 237025,
+      "files": 90,
+      "sha256": "dbbd18d4a887e59a2d692549b2a3e2953e640aab66bec912b9e4d3df6917b006",
+      "crc": "PASS",
+      "inner_sha256": "PASS"
+    },
+    {
+      "archive": "08_PLUGIN_POLLING.zip",
+      "bytes": 1853839,
+      "files": 89,
+      "sha256": "542e9a0c708dccb1b01d7df446e3cea4ec9f98b4493299190a6abfb51b4c24c1",
+      "crc": "PASS",
+      "inner_sha256": "PASS"
+    },
+    {
+      "archive": "09_PLUGIN_MAJORITIES.zip",
+      "bytes": 38166,
+      "files": 14,
+      "sha256": "a24efa3ef09721c03496c4d69d5edc4fd28c543c2ac69ece9ccdcb68513ee066",
+      "crc": "PASS",
+      "inner_sha256": "PASS"
+    }
+  ],
+  "complete_category_coverage": true,
+  "source_files": 640,
+  "max_archive_below_github_browser_25_mib": true,
+  "extracted_portable_checks": [
+    {
+      "command": "python -m hakoniwa validate --pretty",
+      "exit_code": 0,
+      "stdout": "{\n  \"valid\": true,\n  \"actor_count\": 17,\n  \"actors\": [\n    \"Amthor\",\n    \"Baer\",\n    \"Dobrindt\",\n    \"Evers\",\n    \"Frei\",\n    \"Guenther\",\n    \"Hoppermann\",\n    \"Kretschmer\",\n    \"Linnemann\",\n    \"Merz\",\n    \"Reiche\",\n    \"Rhein\",\n    \"Schulze\",\n    \"Soeder\",\n    \"Wadephul\",\n    \"Warken\",\n    \"Wuest\"\n  ],\n  \"errors\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -m hakoniwa personas validate --pretty",
+      "exit_code": 0,
+      "stdout": "{\n  \"actors\": [\n    \"Merz\",\n    \"Frei\",\n    \"Wuest\",\n    \"Soeder\",\n    \"Linnemann\",\n    \"Guenther\",\n    \"Wadephul\",\n    \"Evers\",\n    \"Rhein\",\n    \"Schulze\",\n    \"Dobrindt\",\n    \"Kretschmer\",\n    \"Warken\",\n    \"Baer\",\n    \"Hoppermann\",\n    \"Amthor\",\n    \"Reiche\"\n  ],\n  \"count\": 17,\n  \"source\": \"/private/tmp/hakoniwa-release-i_4qmzis/Hakoniwa/hakoniwa/data/personas/actors\",\n  \"status\": \"CONSISTENT\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -m unittest discover -s hakoniwa/tests -q",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "----------------------------------------------------------------------\nRan 634 tests in 23.886s\n\nOK\n"
+    }
+  ]
+}
